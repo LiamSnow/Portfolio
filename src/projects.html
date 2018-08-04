@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
+
+	<meta name="Description" content="Liam Snow's Portfolio" />
+	<meta name="keywords" content="Liam,Liam Snow,Portfolio" />
+	<meta name="theme-color" content="#171a1f" />
+	<meta name="background_color" content="#171a1f" />
+	<link rel="manifest" href="manifest.json">
+	<link rel="shortcut icon" href="images/icon.jpg">
+
+	<title>Liam Snow</title>
+
+	<script defer src="/__/firebase/5.3.1/firebase-app.js"></script>
+	<script defer src="/__/firebase/init.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="MDC/material.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<link href="css/main.css" rel="stylesheet">
+
+	<style>
+		.LargeProject {
+			width: 100%;
+			min-height: 230px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+			.LargeProject .image-container {
+				width: 300px;
+				height: 180px;
+				overflow: hidden;
+				border: 1px ridge rgb(200, 200, 200);
+				margin-right: 20px
+			}
+
+			.LargeProject h1 {
+				color: rgb(200, 200, 200);
+			}
+
+			.LargeProject > div > div {
+				color: rgb(200, 200, 200);
+				max-width: 800px;
+			}
+
+		@media (max-width: 865px) {
+			.LargeProject > div > div {
+				margin-bottom: 50px;
+			}
+		}
+
+		#Projects2 {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 20px;
+			justify-content: space-around;
+		}
+
+		.SmallProject .image-container {
+			width: 300px;
+			height: 180px;
+			overflow: hidden;
+			border: 1px ridge rgb(200, 200, 200);
+			margin-right: 20px
+		}
+
+		.SmallProject > div > div {
+			margin-bottom: 30px;
+		}
+	</style>
+</head>
+<body>
+	<header class="a">
+		<div class="header-section header-left">
+			<img onclick="Reroute('')" src="images/iconw.jpg" style="width: 40px; height: 40px; margin: 12px; cursor: pointer;" />
+			<div style="color: white; display: flex; align-items: center;"><div style="transform: translateY(-3px);">Liam Snow</div></div>
+		</div>
+		<div class="header-section header-right">
+		</div>
+		<div style="position: fixed; top: 64px; left: 0; right: 0; height: 2px; display: flex; justify-content: center;">
+			<div class="header-border"></div>
+		</div>
+	</header>
+	<noscript>Please Enable Javascript</noscript>
+
+	<div class="container">
+		<div id="Main"></div>
+		<div id="Projects1" style="padding: 100px 40px 40px 40px;">
+			<div class="LargeProject">
+				<div class="image-container">
+					<img style="width: 700px;" src="https://github.com/BreakerBots/Breakersite-Public/raw/master/Images/Private/Todo.PNG" />
+				</div>
+				<div>
+					<h1>Breakersite</h1>
+					<div>
+						sdhf lksadh flkjshjfk ahdlkf jhsadklf jhasdkl fhlaskd hfkalsdhfalksdjhaskdf
+						sdhf lksadh flkjshjfk ahdlkf jhsadklf jhasdkl fhlaskd hfkalsdhfalksdjhaskdf
+						sdhf lksadh flkjshjfk ahdlkf jhsadklf jhasdkl fhlaskd hfkalsdhfalksdjhaskdf
+						sdhf lksadh flkjshjfk ahdlkf jhsadklf jhasdkl fhlaskd hfkalsdhfalksdjhaskdf
+					</div>
+				</div>
+			</div>
+			<div class="LargeProject">
+				<div class="image-container">
+					<img style="width: 300px;" src="https://i.ytimg.com/vi/oq9g4_jZCvE/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD_I_PzuzKT7CYQIwT_LhAd0xGZ9A" />
+				</div>
+				<div>
+					<h1>FPS Project</h1>
+					<div>sdhf lksadh flkjshjfk ahdlkf jhsadklf jhasdkl fhlaskd hfkalsdhfalksdjhaskdf</div>
+				</div>
+			</div>
+		</div>
+		<div style="width: 100%; height: 2px; background: #ffdb00"></div>
+		<h1 style="width: 100%; text-align: center;">Other Projects</h1>
+		<div id="Projects2">
+			<div class="SmallProject">
+				<div class="image-container">
+					<img style="width: 300px;" src="https://github.com/LiamSnow/Python-Cryptography-Game/raw/master/src/Capture.PNG" />
+				</div>
+				<div style="width: 300px;">
+					<h2 style="width: 100%; text-align: center; margin: 5px 0 5px 0;">Python Cryptography Game</h2>
+					<div style="width: 100%; text-align: center;">sdhf lksadh flkjshjfk ahdlkf jhsadklf jhasdkl fhlaskd hfkalsdhfalksdjhaskdf</div>
+				</div>
+			</div>
+			<div class="SmallProject">
+				<div class="image-container">
+					<img style="width: 300px;" src="" />
+				</div>
+				<div style="width: 300px;">
+					<h2 style="width: 100%; text-align: center; margin: 5px 0 5px 0;">This Website</h2>
+					<div style="width: 100%; text-align: center;">sdhf lksadh flkjshjfk ahdlkf jhsadklf jhasdkl fhlaskd hfkalsdhfalksdjhaskdf</div>
+				</div>
+			</div>
+			<div class="SmallProject">
+				<div class="image-container">
+					<img style="width: 700px;" src="https://github.com/LiamSnow/MaterialBase/raw/master/Capture.PNG" />
+				</div>
+				<div style="width: 300px;">
+					<h2 style="width: 100%; text-align: center; margin: 5px 0 5px 0;">Material Base</h2>
+					<div style="width: 100%; text-align: center;">sdhf lksadh flkjshjfk ahdlkf jhsadklf jhasdkl fhlaskd hfkalsdhfalksdjhaskdf</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="Contact" class="footer">
+		<div style="width: 100%; max-width: 600px; margin: 20px 5px 0 5px;">
+			<div style="display: flex;">
+				<img src="images/icony.jpg" style="width: 40px; height: 40px; margin: 12px;" />
+				<div style="display: flex; align-items: center;">
+					<div>
+						This site is created using HTML, CSS and Javascript along with <a href="https://material.io/" target="_blank">Google's Material Desing Components</a>.
+						This website is also hosted through
+						<a href="https://firebase.google.com/" target="_blank">Firebase</a>.
+					</div>
+				</div>
+			</div>
+			<div style="width: 130%; transform: translateX(-12%); height: 2px; background: black;"></div>
+			<div style="margin: 18px 0 0 10px; font-size: 20px;">Contact Me</div>
+			<div style="display: flex;">
+				<a href="https://github.com/LiamSnow" target="_blank"><i class="mdc-icon-toggle" data-mdc-auto-init="MDCIconToggle"><img style="width: 100%;" src="images/social/github.jpg" /></i></a>
+				<a href="mailto:liamsnow03@gmail.com"><i class="mdc-icon-toggle" data-mdc-auto-init="MDCIconToggle"><img style="width: 100%;" src="images/social/email.jpg" /></i></a>
+				<a href="https://www.youtube.com/channel/UC5pYcDrWJKhc6dy6TDvS-ow" target="_blank"><i class="mdc-icon-toggle" data-mdc-auto-init="MDCIconToggle"><img style="width: 100%;" src="images/social/youtube.jpg" /></i></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-fade-open"></div>
+	<div class="page-fade-close"></div>
+
+	<script src="MDC/material.js"></script>
+	<script>mdc.autoInit();</script>
+	<script>
+		function Reroute(url) {
+			document.querySelector('.page-fade-close').classList.add('a');
+			setTimeout(function () {
+				window.location.pathname = url;
+			}, 400);
+		}
+	</script>
+</body>
+</html>

@@ -73,7 +73,7 @@
 	<div id="Contact" class="footer">
 		<div style="width: 100%; max-width: 600px; margin: 20px 5px 0 5px;">
 			<div style="display: flex;">
-				<img src="images/icony.jpg" width="40" height="40" style="width: 40px; height: 40px; margin: 12px;" />
+				<img src="images/icony.jpg" style="width: 40px; height: 40px; margin: 12px;" />
 				<div style="display: flex; align-items: center;">
 					<div>
 						This site is created using HTML, CSS and Javascript along with <a href="https://material.io/" target="_blank">Google's Material Desing Components</a>.
@@ -100,20 +100,13 @@
 	<script>
 		window.onscroll = Header;
 		function Header() {
-			if (getScroll() > document.querySelector('#Main').scrollHeight) {
+			if ((document.documentElement.scrollTop) > document.querySelector('#Main').scrollHeight) {
 				document.querySelector('header').classList.add("a");
 			}
 			else {
 				document.querySelector('header').classList.remove("a");
 			}
 		} Header();
-
-		function getScroll() {
-			if (window.pageYOffset != undefined)
-				return pageYOffset;
-			else
-				return (document.documentElement.scrollTop || document.body.scrollTop || 0);
-		}
 
 		function Reroute(url) {
 			document.querySelector('.page-fade-close').classList.add('a');

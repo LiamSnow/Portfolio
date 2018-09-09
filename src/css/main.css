@@ -42,9 +42,9 @@ header {
 	top: 0;
 	height: 64px;
 	display: flex;
-	width: calc(100vw - 20px);
+	width: 100vw;
 	background: transparent;
-	transition: margin 0.4s cubic-bezier(.4, 0, .2, 1), background-color 0.4s;
+	transition: margin 0.4s cubic-bezier(.4, 0, .2, 1), background-color 0.4s, box-shadow 0.4s;
 	z-index: 10;
 }
 
@@ -59,6 +59,7 @@ header {
 
 	header.a {
 		background: #171a1f;
+		box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12)
 	}
 
 .header-border {

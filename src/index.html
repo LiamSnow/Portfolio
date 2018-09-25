@@ -101,18 +101,17 @@
 <body>
 	<header>
 		<div class="header-section header-left">
-			<img onclick="Reroute('')" src="images/iconw.jpg" style="width: 40px; height: 40px; margin: 12px; cursor: pointer;" />
+			<img onclick="s8a9hs('')" src="images/iconw.jpg" style="width: 40px; height: 40px; margin: 12px; cursor: pointer;" />
 			<div style="color: white; display: flex; align-items: center;"><div style="transform: translateY(-3px);">Liam Snow</div></div>
 		</div>
 		<div class="header-section header-right">
-			
+			<button onclick="s8a9hs('/projects')" class="mdc-button mdc-button--outlined" data-mdc-auto-init="MDCRipple" style="margin: 12px">See Projects</button>
 		</div>
 		<div style="position: fixed; top: 64px; left: 0; right: 0; height: 2px; display: flex; justify-content: center;">
 			<div class="header-border"></div>
 		</div>
 	</header>
 	<noscript>Ay! Enable Javascript</noscript>
-
 	<div class="container">
 		<div id="Main" style="height: 600px; display: flex; justify-content: center; align-items: center;">
 			<div style="font-size: calc(4vw + 70px); color: #ffdb00">
@@ -130,7 +129,7 @@
 					<h1>About Me</h1>
 					<div style="max-width: 800px; width: 80%;">
 						Hi, I'm Liam Snow, a passionate coder and student at Pacific Grove High School. 
-						I am the Lead Programmer on the <a href="https://breakerbots.com/" target="_blank">Breakerbots</a> and have been coding since I was nine.
+						I am the Lead Programmer on the <a href="https://breakerbots.com/" target="_blank">Breakerbots Robotics Team</a> and design websites for <a href="https://github.com/Breakersites" target="_blank">Breakersites</a>.
 					</div>
 				</div>
 			</div>
@@ -139,18 +138,16 @@
 		<div id="Work" style="display: flex; flex-wrap: wrap; justify-content: center;">
 			<h1 style="width: 100%; text-align: center;">My Work</h1>
 			<div style="width: 80%; max-width: 600px; text-align: center; margin: 0 0 20px 0;">
-				I have experience in C#, C++, C, Javascript, Java, Python, HTML, and CSS. 
-				Though, I mostly just design websites, code robots and make video games.
+				I have experience in C, C#, C++, Java, JavaScript, Python, HTML, and CSS. 
 			</div>
 			<div style="width: 100%"></div>
-			<button onclick="Reroute('/projects')" class="mdc-button mdc-button--outlined" data-mdc-auto-init="MDCRipple" style="margin: 0 0 30px 0">See Projects</button>
+			<button onclick="s8a9hs('/projects')" class="mdc-button mdc-button--outlined" data-mdc-auto-init="MDCRipple" style="margin: 0 0 30px 0">See Projects</button>
 		</div>
 	</div>
-
 	<div id="Contact" class="footer">
 		<div style="width: 100%; max-width: 600px; margin: 20px 5px 0 5px;">
 			<div style="display: flex;">
-				<img src="images/icony.jpg" width="40" height="40" style="width: 40px; height: 40px; margin: 12px;" />
+				<img src="images/icony.jpg" width="40" height="40" style="width: 40px; margin: 12px;" />
 				<div style="display: flex; align-items: center;">
 					<div>
 						This site is created using HTML, CSS and Javascript along with <a href="https://material.io/" target="_blank">Google's Material Desing Components</a>.
@@ -165,39 +162,16 @@
 				<a href="https://github.com/LiamSnow" target="_blank"><i class="mdc-icon-toggle" data-mdc-auto-init="MDCIconToggle"><img style="width: 100%;" src="images/social/github.jpg" /></i></a>
 				<a href="mailto:liamsnow03@gmail.com"><i class="mdc-icon-toggle" data-mdc-auto-init="MDCIconToggle"><img style="width: 100%;" src="images/social/email.jpg" /></i></a>
 				<a href="https://www.youtube.com/channel/UC5pYcDrWJKhc6dy6TDvS-ow" target="_blank"><i class="mdc-icon-toggle" data-mdc-auto-init="MDCIconToggle"><img style="width: 100%;" src="images/social/youtube.jpg" /></i></a>
+				<a href="https://twitter.com/LiamSnow13" target="_blank"><i class="mdc-icon-toggle" data-mdc-auto-init="MDCIconToggle"><img style="width: 100%;" src="images/social/twitter.jpg" /></i></a>
+				<a href="https://plus.google.com/u/0/101968490516050014998" target="_blank"><i class="mdc-icon-toggle" data-mdc-auto-init="MDCIconToggle"><img style="width: 100%;" src="images/social/google+.jpg" /></i></a>
+				<a href="https://www.facebook.com/liam.snow.7121" target="_blank"><i class="mdc-icon-toggle" data-mdc-auto-init="MDCIconToggle"><img style="width: 100%;" src="images/social/facebook.jpg" /></i></a>
 			</div>
 		</div>
 	</div>
-
 	<div class="page-fade-open"></div>
 	<div class="page-fade-close"></div>
-
 	<script src="MDC/material.js"></script>
 	<script>mdc.autoInit();</script>
-	<script>
-		window.onscroll = Header;
-		function Header() {
-			if (getScroll() > 0) {
-				document.querySelector('header').classList.add("a");
-			}
-			else {
-				document.querySelector('header').classList.remove("a");
-			}
-		} Header();
-
-		function getScroll() {
-			if (window.pageYOffset != undefined)
-				return pageYOffset;
-			else
-				return (document.documentElement.scrollTop || document.body.scrollTop || 0);
-		}
-
-		function Reroute(url) {
-			document.querySelector('.page-fade-close').classList.add('a');
-			setTimeout(function () {
-				window.location.pathname = url;
-			}, 400);
-		}
-	</script>
+	<script>window.onscroll=Header;function Header(){0<getScroll()?document.querySelector("header").classList.add("a"):document.querySelector("header").classList.remove("a")}Header();function getScroll(){return void 0!=window.pageYOffset?pageYOffset:document.documentElement.scrollTop||document.body.scrollTop||0}function s8a9hs(a){document.querySelector(".page-fade-close").classList.add("a");setTimeout(function(){window.location.pathname=a},400)};</script>
 </body>
 </html>

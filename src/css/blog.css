@@ -1,0 +1,125 @@
+/* blog.css */
+
+container {
+	display: block;
+	padding: 94px 5vw 30px 5vw;
+	width: 90vw;
+	font-size: 17px;
+}
+
+@media (max-width: 700px) {
+	container {
+		padding: 80px 20px 20px 20px;
+		width: calc(100vw - 40px);
+	}
+}
+
+/*Divider*/
+h1 {
+	margin-top: 0 !important;
+	padding-bottom: 0.3em;
+	font-size: 2em;
+	border-bottom: 1px solid rgb(51, 59, 70);
+	margin-bottom: 16px;
+	font-weight: 600;
+	line-height: 1.25;
+	margin: 0.67em 0;
+}
+
+hr {
+	height: 0.25em;
+	padding: 0;
+	margin: 24px 0;
+	background-color: rgb(59, 66, 79);
+	border: 0;
+	overflow: hidden;
+}
+
+h2 {
+	padding-bottom: 0.3em;
+	font-size: 1.5em;
+	border-bottom: 1px solid rgb(51, 59, 70);
+	margin-top: 24px;
+	margin-bottom: 16px;
+	font-weight: 600;
+	line-height: 1.25;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+pre {
+	padding: 16px;
+	overflow: auto;
+	font-size: 100%;
+	line-height: 1.45;
+	background-color: rgb(33, 37, 45);
+	border-radius: 3px;
+	word-wrap: normal;
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-family: Consolas;
+	max-width: 100%;
+}
+
+code {
+	display: inline;
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+	line-height: inherit;
+	word-wrap: normal;
+	background-color: transparent;
+	border: 0;
+	font-size: 100%;
+	word-break: normal;
+	white-space: pre;
+	background: transparent;
+	border-radius: 3px;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin-top: 0;
+	margin-bottom: 16px;
+	display: block;
+	overflow: auto;
+}
+
+thead {
+	background-color: rgb(33, 37, 45);
+	border-top: 2px solid rgb(52, 58, 71);
+	border-left: 2px solid rgb(52, 58, 71);
+	border-right: 2px solid rgb(52, 58, 71);
+}
+
+tbody {
+	background-color: rgb(33, 37, 45);
+	border-bottom: 2px solid rgb(52, 58, 71);
+	border-left: 2px solid rgb(52, 58, 71);
+	border-right: 2px solid rgb(52, 58, 71);
+}
+
+tr {
+	border-top: 1px solid rgb(52, 58, 71);
+}
+
+th {
+	font-weight: 600;
+	padding: 6px 13px;
+	border: 1px solid rgb(52, 58, 71);
+}
+
+td {
+	padding: 6px 13px;
+	border: 1px solid rgb(52, 58, 71);
+}
+
+tr {
+	border-top: 1px solid rgb(52, 58, 71);
+}

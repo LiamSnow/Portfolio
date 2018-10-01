@@ -1,0 +1,84 @@
+/* projects.css */
+
+hr {
+	width: 100%;
+	border-color: #ffdb00;
+}
+
+hr-title {
+	width: 100%;
+	text-align: center;
+	display: block;
+	font-size: 2em;
+	margin-block-start: 0.67em;
+	margin-block-end: 0.67em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+}
+
+/* Large Projects */
+largeProjects {
+	display: block;
+	padding: 100px 40px 40px 40px;
+}
+
+largeProject {
+	display: block;
+	width: 100%;
+	min-height: 230px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+	largeProject image-container {
+		display: block;
+		width: 300px;
+		height: 180px;
+		overflow: hidden;
+		border: 1px ridge rgb(200, 200, 200);
+		margin-right: 20px
+	}
+
+	largeProject > div > div {
+		max-width: 800px;
+	}
+
+@media (max-width: 865px) {
+	largeProject > div > div {
+		margin-bottom: 50px;
+	}
+}
+
+/* Small Projects */
+smallProjects {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	justify-content: space-around;
+}
+
+smallProject image-container {
+	display: block;
+	width: 300px;
+	height: 180px;
+	overflow: hidden;
+	border: 1px ridge rgb(200, 200, 200);
+	margin-right: 20px
+}
+
+smallProject > div {
+	width: 300px;
+}
+
+smallProject > div > h2 {
+	width: 100%;
+	text-align: center;
+	margin: 5px 0 5px 0;
+}
+
+	smallProject > div > div {
+		margin-bottom: 30px;
+		width: 100%;
+		text-align: center;
+	}

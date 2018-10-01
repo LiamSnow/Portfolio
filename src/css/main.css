@@ -1,3 +1,17 @@
+/*
+	main.css
+	
+	Colors:
+		Primary (Yellow): 
+			- #ffdb00
+			- rgb(255, 219, 0)
+
+		Secondary (Gray-Blue): 
+			- #171a1f
+			- rgb(23, 26, 31)
+*/
+
+/* General */
 body, html {
 	margin: 0;
 	width: 100vw;
@@ -5,26 +19,9 @@ body, html {
 }
 
 * {
-	font-family: Arial;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	/*color: rgb(158, 178, 214);*/
 	color: rgb(200, 200, 200);
-}
-
-.container {
-	width: 100%;
-	min-height: 1400px;
-	background: #171a1f;
-}
-
-.footer {
-	width: 100%;
-	background: #ffdb00;
-	min-height: 300px;
-	display: flex;
-	justify-content: center;
-}
-
-.footer * {
-	color: black;
 }
 
 a {
@@ -36,6 +33,68 @@ a {
 	display: none;
 }
 
+/* Container */
+container {
+	display: block;
+	width: 100%;
+	min-height: 1400px;
+	background: #171a1f;
+}
+
+/* Footer */
+footer {
+	width: 100%;
+	background: #ffdb00;
+	min-height: 300px;
+	display: flex;
+	justify-content: center;
+}
+
+footer * {
+	color: black;
+}
+
+footer-section {
+	display: block;
+	width: 100%;
+	max-width: 600px;
+	margin: 20px 5px 0 5px;
+}
+
+footer-top {
+	display: flex;
+}
+
+	footer-top > img {
+		width: 40px;
+		height: 40px;
+		margin: 12px;
+	}
+
+	footer-top > div {
+		display: flex;
+		align-items: center;
+	}
+
+footer-divider {
+	display: block;
+	width: 130%;
+	transform: translateX(-12%);
+	height: 2px;
+	background: black;
+}
+
+footer-contact--title {
+	display: block;
+	margin: 18px 0 0 10px;
+	font-size: 20px;
+}
+
+footer-contact {
+	display: flex;
+}
+
+/* Header */
 header {
 	position: fixed;
 	left: 0;
@@ -63,17 +122,6 @@ header {
 		box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12)
 	}
 
-.header-border {
-	background: #ffdb00;
-	width: 0;
-	height: 100%;
-	transition: width 0.4s cubic-bezier(.4, 0, .2, 1);
-}
-
-header.a .header-border {
-	width: 100%;
-}
-
 .header-section {
 	height: 100%;
 	width: 50%;
@@ -82,15 +130,57 @@ header.a .header-border {
 	align-items: center;
 }
 
-.header-left {
+header-left {
 	justify-content: flex-start;
 }
 
-.header-right {
+	header-left img {
+		width: 40px;
+		height: 40px;
+		margin: 12px;
+		cursor: pointer;
+	}
+
+header-right {
 	justify-content: flex-end;
 }
 
-.page-fade-close {
+header-border--wrapper {
+	position: fixed;
+	top: 64px;
+	left: 0;
+	right: 0;
+	height: 2px;
+	display: flex;
+	justify-content: center;
+}
+
+header.a header-border {
+	width: 100%;
+}
+
+header-border--wrapper > header-border {
+	display: block;
+	background: #ffdb00;
+	width: 0;
+	height: 100%;
+	transition: width 0.4s cubic-bezier(.4, 0, .2, 1);
+}
+
+header-title--wrapper {
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+header-title--wrapper > header-title {
+	display: block;
+	transform: translateY(-3px);
+}
+
+/* Transitions */
+page-fade--close {
+	display: block;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -102,13 +192,14 @@ header.a .header-border {
 	z-index: 20;
 }
 
-	.page-fade-close.a {
+	page-fade--close.a {
 		width: 100vw;
 		height: 100vh;
 		background: #171a1f;
 	}
 
-.page-fade-open {
+page-fade--open {
+	display: block;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -128,3 +219,41 @@ header.a .header-border {
 		background: transparent;
 	}
 }
+
+/* Drawer */
+.breaker-drawer--wrapper {
+	z-index: 11;
+}
+
+.breaker-drawer {
+	border-left: 2px solid #ffdb00 !important;
+	background: #171a1f !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+	transform: translateX(100vw) !important;
+}
+
+.mdc-drawer--open .breaker-drawer {
+	transform: translateX(calc(100vw - 275px)) !important;
+}
+
+.breaker-drawer a {
+	padding: 3px 20px 3px 20px;
+	font-size: 17px;
+	margin-top: 5px;
+	color: #ffdb00 !important;
+}
+
+	.breaker-drawer a::before, .breaker-drawer a::after {
+		background-color: #ffdb00 !important;
+		transition: opacity 0.4s cubic-bezier(0.2, 0, 0.2, 1) !important;
+	}
+
+	.breaker-drawer a:hover::before {
+		opacity: 0.1 !important;
+	}
+
+	.breaker-drawer a.mdc-ripple-upgraded {
+		--mdc-ripple-fg-opacity: 0.3 !important;
+	}

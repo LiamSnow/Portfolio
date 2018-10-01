@@ -1,11 +1,28 @@
 {
-	"hosting": {
-		"public": "src",
-		"ignore": [
-			"firebase.json",
-			"**/.*",
-			"**/node_modules/**"
-		],
-		"cleanUrls": true
-	}
+"hosting": {
+	"public": "src",
+	"ignore": [
+		"firebase.json",
+		"**/.*",
+		"**/node_modules/**"
+	],
+	"rewrites": [
+		{
+			"source": "/",
+			"function": "getPage"
+		},
+		{
+			"source": "/projects",
+			"function": "getPage"
+		},
+		{
+			"source": "/blog",
+			"function": "getPage"
+		},
+		{
+			"source": "/blog/*",
+			"function": "getPage"
+		}
+	]
+}
 }

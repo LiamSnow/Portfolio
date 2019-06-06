@@ -63,6 +63,7 @@ footer-section {
 
 footer-top {
 	display: flex;
+	margin-bottom: 15px;
 }
 
 	footer-top > img {

@@ -14,12 +14,6 @@ app.get('/', (req, res) => {
 	})
 });
 
-app.get('/projects', (req, res) => {
-	getPage('/src/pages/projects.html', function (a) {
-		res.send(a);
-	})
-});
-
 app.get('/blog', (req, res) => {
 	getPage('/src/pages/blog.html', function (a) {
 		res.send(a);

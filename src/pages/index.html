@@ -1,6 +1,7 @@
 ﻿<!--index.html-->
 <title>Portfolio</title>
 <css>index</css>
+<css>projects</css>
 
 <div id="Main" style="height: 600px; display: flex; justify-content: center; align-items: center;">
 	<div style="font-size: calc(4vw + 70px); color: #ffdb00">
@@ -12,26 +13,98 @@
 <div id="About" style="width: 100%;">
 	<div style="display: flex; flex-wrap: wrap; justify-content: center; width: 100%; padding: 20px;">
 		<div style="width: 300px; height: 300px; border-radius: 50%; background: rgb(17, 20, 25); overflow: hidden; margin-right: 30px;">
-			<img style="width: 300px;" src="" />
+			<img style="width: 300px;" src="images/me.png" />
 		</div>
 		<div>
 			<h1>About Me</h1>
 			<div style="max-width: 800px; width: 80%;">
-				Hi, I'm Liam Snow, a passionate coder and student at Pacific Grove High School. 
-				I am the Lead Programmer on the <a href="https://breakerbots.com/" target="_blank">Breakerbots Robotics Team</a> and design websites for <a href="https://github.com/Breakersites" target="_blank">Breakersites</a>.
+				I program and make robots.
+				<a href="https://breakerbots.com/" target="_blank">Breakerbots Robotics Team</a>.
 			</div>
 		</div>
 	</div>
 </div>
-<div style="width: 100%; height: 2px; background: #ffdb00; margin: 30px 0 30px 0;"></div>
-<div id="Work" style="display: flex; flex-wrap: wrap; justify-content: center;">
-	<h1 style="width: 100%; text-align: center;">My Work</h1>
-	<div style="width: 80%; max-width: 600px; text-align: center; margin: 0 0 20px 0;">
-		I have experience in C, C#, C++, Java, JavaScript, Python, HTML, and CSS. 
-	</div>
-	<div style="width: 100%"></div>
-	<a onclick="event.preventDefault(); s8a9hs('/projects')" href="/projects" class="mdc-button mdc-button--outlined" data-mdc-auto-init="MDCRipple" style="margin: 0 0 30px 0">See Projects</a>
+<div id="Work">
+	<hr />
+	<hr-title>Personal Projects</hr-title>
+	<largeProjects>
+		<largeProject>
+			<img src="https://raw.githubusercontent.com/Breakersites/Breakersite-Public/master/snapshots/screenshot1.png" />
+			<div>
+				<h1>BreakerBots Website</h1>
+				<div>
+					The BreakerBots website was a project worked on by myself and <a href="https://github.com/mchow101" target="_blank">Mitali Chowdhury</a>
+					to promote our robotics team, the <a href="https://breakerbots.com/" target="_blank">Breakerbots</a>.
+				</div>
+			</div>
+		</largeProject>
+		<largeProject>
+			<img src="https://raw.githubusercontent.com/Breakersites/BreakersClub-Public/master/snapshots/snapshot1.png" />
+			<div>
+				<h1>BreakersClub Website</h1>
+				<div>
+					The Breaker was a project worked on by myself and <a href="https://github.com/mchow101" target="_blank">Mitali Chowdhury</a>
+					for our robotics team, the <a href="https://breakerbots.com/" target="_blank">Breakerbots</a>.
+					I worked on the backend of the Breakersite. A tool that team members use for task, part, team, and event management.
+					<br /><a href="https://github.com/BreakerBots/Breakersite-Public" target="_blank">Github</a> &nbsp;
+					<a href="https://breakerbots.com/" target="_blank">Site</a>
+				</div>
+			</div>
+		</largeProject>
+		<largeProject>
+			<img src="../images/projects/FPSProject.jpg" />
+			<div>
+				<h1>FPS Project</h1>
+				<div>
+					The FPS Project is a FPS game designed in <a href="https://www.unrealengine.com" target="_blank">Unreal Engine 4</a>.
+					The project got shut down before release.
+					<br />
+				</div>
+			</div>
+		</largeProject>
+	</largeProjects>
+
+	<hr />
+	<hr-title>Smaller Projects</hr-title>
+
+	<smallProjects>
+		<smallProject>
+			<img src="https://github.com/LiamSnow/Python-Cryptography-Game/raw/master/src/Capture.PNG" />
+			<div>
+				<h2>Python Cryptography Game</h2>
+				<div>
+					The Python Cryptography Game was a simple game designed in <a href="https://www.python.org/" target="_blank">Python</a> with <a href="https://www.pygame.org/news" target="_blank">Pygame</a>
+					showing a few simple types of cryptography.
+					<br /><a href="https://github.com/LiamSnow/Python-Cryptography-Game" target="_blank">Github</a>
+				</div>
+			</div>
+		</smallProject>
+		<smallProject>
+			<img src="../images/github/Main.PNG" />
+			<div>
+				<h2>This Website</h2>
+				<div>
+					This site is created using HTML, CSS and Javascript along with <a href="https://material.io/" target="_blank">Google's Material Desing Components</a>.
+					This website is also hosted through
+					<a href="https://cloud.google.com/" target="_blank">Google Cloud</a>.
+					<br /><a href="https://github.com/LiamSnow/Portfolio" target="_blank">Github</a>
+				</div>
+			</div>
+		</smallProject>
+		<smallProject>
+			<img src="https://raw.githubusercontent.com/LiamSnow/Dinosour-Game-Remake/master/snapshot.png" />
+			<div>
+				<h2>Dinosour Game Remake</h2>
+				<div>
+					A Javascript remake of Google's Dinosour easter egg game.
+					<br /><a href="https://github.com/LiamSnow/Dinosour-Game-Remake" target="_blank">Github</a>
+				</div>
+			</div>
+		</smallProject>
+	</smallProjects>
 </div>
+
+
 <script>
 	window.onscroll = Header;
 	function Header() {

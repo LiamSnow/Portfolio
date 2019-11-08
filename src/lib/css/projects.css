@@ -57,7 +57,7 @@ largeProject {
 smallProjects {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 20px;
+	padding: none;
 	justify-content: space-around;
 }
 
@@ -66,7 +66,8 @@ smallProject img {
 	margin-right: 20px;
 	position: relative;
 	display: block;
-	width: 300px;
+	width: 100%;
+	max-width: 400px;
 	max-height: 180px;
 	object-fit: cover;
 	border-radius: 4px;
@@ -75,10 +76,11 @@ smallProject img {
 }
 
 smallProject > div {
-	width: 300px;
+	width: 100%;
+	max-width: 400px;
 }
 
-smallProject > div > h2 {
+smallProject > div > h1 {
 	width: 100%;
 	text-align: center;
 	margin: 5px 0 5px 0;

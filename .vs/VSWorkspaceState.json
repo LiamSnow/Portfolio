@@ -2,11 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\images",
     "\\src\\lib",
     "\\src\\lib\\css",
     "\\src\\lib\\imports",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\lib\\css\\main.css",
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }

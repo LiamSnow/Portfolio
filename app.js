@@ -20,6 +20,12 @@ app.get('/blog', (req, res) => {
 	})
 });
 
+app.get('/quizgen', (req, res) => {
+	getPage('/src/pages/quizgen.html', function (a) {
+		res.send(a);
+	})
+});
+
 app.get('*', (req, res) => {
 	fs.readFile(path.join(__dirname, '/src/pages/404.html'), 'utf8', function (err, data) {
 		if (err) { console.error(err); return; }

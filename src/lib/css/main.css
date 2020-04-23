@@ -67,9 +67,9 @@ footer-top {
 }
 
 	footer-top > img {
-		width: 40px;
-		height: 40px;
-		margin: 12px;
+		width: 40px !important;
+		height: 40px !important;
+		margin: 12px !important;
 	}
 
 	footer-top > div {

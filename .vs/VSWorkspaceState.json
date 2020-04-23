@@ -3,11 +3,12 @@
     "",
     "\\src",
     "\\src\\images",
+    "\\src\\images\\projects",
     "\\src\\lib",
     "\\src\\lib\\css",
     "\\src\\lib\\imports",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\lib\\css\\main.css",
+  "SelectedNode": "\\src\\manifest.json",
   "PreviewInSolutionExplorer": false
 }

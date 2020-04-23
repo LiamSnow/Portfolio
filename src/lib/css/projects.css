@@ -59,6 +59,7 @@ smallProjects {
 	flex-wrap: wrap;
 	padding: none;
 	justify-content: space-around;
+	margin: 0 20px 0 20px;
 }
 
 smallProject img {

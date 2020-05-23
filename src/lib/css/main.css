@@ -66,11 +66,26 @@ footer-top {
 	margin-bottom: 15px;
 }
 
-	footer-top > img {
+	footer-top > footer-logo {
+		display: block;
+		min-width: 40px !important;
 		width: 40px !important;
+		max-width: 40px !important;
+		min-height: 40px !important;
 		height: 40px !important;
+		max-height: 40px !important;
 		margin: 12px !important;
 	}
+
+		footer-top > footer-logo > img {
+			display: block;
+			min-width: 40px !important;
+			width: 40px !important;
+			max-width: 40px !important;
+			min-height: 40px !important;
+			height: 40px !important;
+			max-height: 40px !important;
+		}
 
 	footer-top > div {
 		display: flex;
